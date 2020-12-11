@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+    - name: install git 
+      package:
+        name: git
+        state: present
+    - name: install tree
+      package: 
+        name: tree
+        state: present
+    - name: install nano
+      package: 
+        name: nano
+        state: present
